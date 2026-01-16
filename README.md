@@ -51,4 +51,4 @@ or
 - payment
 
 ## Live link
-- (Put your hosted URL here)
+- https://muraditakashvili.github.io/Cinema/
