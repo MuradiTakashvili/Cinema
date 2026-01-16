@@ -1,0 +1,8 @@
+[
+  { "id": 101, "movieId": 1, "date": "2026-01-18", "time": "18:30", "hallId": "A", "price": 20 },
+  { "id": 102, "movieId": 1, "date": "2026-01-18", "time": "21:00", "hallId": "A", "price": 22 },
+  { "id": 103, "movieId": 2, "date": "2026-01-19", "time": "19:00", "hallId": "B", "price": 18 },
+  { "id": 104, "movieId": 2, "date": "2026-01-19", "time": "21:30", "hallId": "B", "price": 19 },
+  { "id": 105, "movieId": 3, "date": "2026-01-18", "time": "16:00", "hallId": "C", "price": 15 },
+  { "id": 106, "movieId": 4, "date": "2026-01-20", "time": "20:00", "hallId": "D", "price": 17 }
+]

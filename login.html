@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinema — Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">🎬</div>
+        <span>Cinema</span>
+      </a>
+      <nav class="navlinks">
+        <a class="pill" href="index.html">Movies</a>
+        <button class="btn ghost" data-action="theme" type="button">Dark/Light</button>
+        <div data-slot="auth" style="display:flex;gap:10px;align-items:center"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel form" style="max-width:560px;margin:16px auto 0 auto">
+      <h3>Login</h3>
+      <div class="small">Checkout requires login.</div>
+
+      <div class="form-grid" style="margin-top:12px">
+        <div class="full">
+          <div class="label">Name</div>
+          <input id="name" class="input" placeholder="Your name" />
+        </div>
+        <div class="full">
+          <div class="label">Password</div>
+          <input id="pass" type="password" class="input" placeholder="Any password (demo)" />
+        </div>
+        <div class="full" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+          <button class="btn" id="loginBtn" type="button">Login</button>
+          <a class="btn secondary" href="index.html">Back</a>
+        </div>
+      </div>
+
+      <div class="error" id="err"></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>

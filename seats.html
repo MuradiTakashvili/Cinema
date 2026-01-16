@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinema — Seats</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">🎬</div>
+        <span>Cinema</span>
+      </a>
+      <nav class="navlinks">
+        <a class="pill" href="index.html">Movies</a>
+        <button class="btn ghost" data-action="theme" type="button">Dark/Light</button>
+        <div data-slot="auth" style="display:flex;gap:10px;align-items:center"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="seats-layout">
+      <section class="hall panel">
+        <div class="small" id="sessionInfo"></div>
+        <div class="screen"></div>
+        <div id="seatGrid" class="seat-grid" aria-label="Seat grid"></div>
+
+        <div class="legend">
+          <div class="item"><span class="dot"></span> Available</div>
+          <div class="item"><span class="dot selected"></span> Selected</div>
+          <div class="item"><span class="dot taken"></span> Taken</div>
+        </div>
+
+        <div class="footer-note" id="ruleNote"></div>
+      </section>
+
+      <aside class="summary panel">
+        <h3>Order summary</h3>
+        <div class="kv"><span>Session</span><strong id="sumSession">—</strong></div>
+        <div class="kv"><span>Price / seat</span><strong id="sumPrice">—</strong></div>
+        <div class="hr"></div>
+        <div class="kv"><span>Selected</span><strong id="sumCount">0</strong></div>
+        <div class="list" id="sumSeats"></div>
+        <div class="hr"></div>
+        <div class="kv"><span>Total</span><strong id="sumTotal">0.00₾</strong></div>
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn secondary" href="index.html">Back</a>
+          <button class="btn" id="continueBtn" disabled type="button">Continue</button>
+        </div>
+        <div class="error" id="err"></div>
+      </aside>
+    </div>
+  </main>
+
+  <script type="module" src="js/seats.js"></script>
+</body>
+</html>

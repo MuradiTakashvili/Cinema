@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinema — Movies</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">🎬</div>
+        <span>Cinema</span>
+      </a>
+      <nav class="navlinks">
+        <a class="pill" href="index.html">Movies</a>
+        <button class="btn ghost" data-action="theme" type="button">Dark/Light</button>
+        <div data-slot="auth" style="display:flex;gap:10px;align-items:center"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Now Showing</h1>
+      <p>Choose a movie, pick a session, select seats, then simulate payment and get a receipt.</p>
+
+      <div class="hero-controls">
+        <div class="field">
+          <div class="label">Search (title)</div>
+          <input id="searchInput" class="input" placeholder="Type movie name..." />
+        </div>
+        <div class="field">
+          <div class="label">Filter (genre)</div>
+          <select id="genreSelect" class="select">
+            <option value="all">All</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" id="moviesGrid" aria-label="Movies grid"></section>
+  </main>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

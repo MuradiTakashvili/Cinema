@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinema — Checkout</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">🎬</div>
+        <span>Cinema</span>
+      </a>
+      <nav class="navlinks">
+        <a class="pill" href="index.html">Movies</a>
+        <button class="btn ghost" data-action="theme" type="button">Dark/Light</button>
+        <div data-slot="auth" style="display:flex;gap:10px;align-items:center"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="checkout">
+      <aside class="summary panel">
+        <h3>Order summary</h3>
+        <div class="kv"><span>Movie</span><strong id="oMovie">—</strong></div>
+        <div class="kv"><span>Session</span><strong id="oSession">—</strong></div>
+        <div class="kv"><span>Hall</span><strong id="oHall">—</strong></div>
+        <div class="hr"></div>
+        <div class="kv"><span>Seats</span><strong id="oCount">0</strong></div>
+        <div class="list" id="oSeats"></div>
+        <div class="hr"></div>
+        <div class="kv"><span>Total</span><strong id="oTotal">0.00₾</strong></div>
+      </aside>
+
+      <section class="form panel">
+        <h3>Payment (simulation)</h3>
+        <div class="form-grid">
+          <div class="full">
+            <div class="label">Cardholder name</div>
+            <input id="name" class="input" placeholder="Name Surname" />
+          </div>
+
+          <div class="full">
+            <div class="label">Card number (16 digits)</div>
+            <input id="card" class="input" inputmode="numeric" placeholder="1111 2222 3333 4444" />
+          </div>
+
+          <div>
+            <div class="label">Exp (MM/YY)</div>
+            <input id="exp" class="input" placeholder="09/29" />
+          </div>
+
+          <div>
+            <div class="label">CVV (3 digits)</div>
+            <input id="cvv" class="input" inputmode="numeric" placeholder="123" />
+          </div>
+
+          <div class="full" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+            <a class="btn secondary" id="backBtn" href="seats.html">Back</a>
+            <button class="btn" id="payBtn" type="button">Pay</button>
+          </div>
+        </div>
+
+        <div class="error" id="payErr"></div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="js/checkout.js"></script>
+</body>
+</html>

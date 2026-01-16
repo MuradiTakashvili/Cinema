@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinema — Success</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">🎬</div>
+        <span>Cinema</span>
+      </a>
+      <nav class="navlinks">
+        <a class="pill" href="index.html">Movies</a>
+        <button class="btn ghost" data-action="theme" type="button">Dark/Light</button>
+        <div data-slot="auth" style="display:flex;gap:10px;align-items:center"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel success-box">
+      <h2 style="margin:0">Payment successful ✅</h2>
+      <p class="small" style="margin:8px 0 0 0">Your ticket/receipt is below.</p>
+
+      <div class="receipt" id="receipt"></div>
+
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="index.html">Go Home</a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/success.js"></script>
+</body>
+</html>

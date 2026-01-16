@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinema — Movie</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-badge">🎬</div>
+        <span>Cinema</span>
+      </a>
+      <nav class="navlinks">
+        <a class="pill" href="index.html">Movies</a>
+        <button class="btn ghost" data-action="theme" type="button">Dark/Light</button>
+        <div data-slot="auth" style="display:flex;gap:10px;align-items:center"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="movie-layout">
+      <div class="movie-poster panel">
+        <img id="poster" alt="poster" />
+      </div>
+
+      <section class="movie-info panel">
+        <h2 id="title"></h2>
+        <div class="meta" id="meta"></div>
+        <p id="desc"></p>
+
+        <div class="hr"></div>
+        <h3 style="margin:0 0 10px 0">Showtimes</h3>
+        <div class="times" id="times"></div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="js/movie.js"></script>
+</body>
+</html>

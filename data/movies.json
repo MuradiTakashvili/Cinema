@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Dune: Part Two",
+    "poster": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?w=800&q=80&auto=format&fit=crop",
+    "description": "Paul Atreides unites with the Fremen while facing the forces that threaten Arrakis.",
+    "duration": 166,
+    "genre": "Sci-Fi",
+    "rating": 8.6
+  },
+  {
+    "id": 2,
+    "title": "Oppenheimer",
+    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80&auto=format&fit=crop",
+    "description": "The story of J. Robert Oppenheimer and the creation of the atomic bomb.",
+    "duration": 180,
+    "genre": "Drama",
+    "rating": 8.3
+  },
+  {
+    "id": 3,
+    "title": "Spider-Man: Into the Spider-Verse",
+    "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80&auto=format&fit=crop",
+    "description": "Miles Morales becomes Spider-Man and meets other Spider-people across the multiverse.",
+    "duration": 117,
+    "genre": "Animation",
+    "rating": 8.4
+  },
+  {
+    "id": 4,
+    "title": "John Wick",
+    "poster": "https://images.unsplash.com/photo-1517602302552-471fe67acf66?w=800&q=80&auto=format&fit=crop",
+    "description": "A retired hitman seeks vengeance after losing what he loved most.",
+    "duration": 101,
+    "genre": "Action",
+    "rating": 7.4
+  }
+]
